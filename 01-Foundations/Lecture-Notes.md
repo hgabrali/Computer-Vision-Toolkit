@@ -17,6 +17,64 @@ The distinction between CV and classical ML lies primarily in the nature of the 
 
 
 
+
+# 👁️ Computer Vision Roadmap: From Foundations to State-of-the-Art
+
+---
+
+## 🏗️ Comprehensive Architecture Overview
+This document outlines the hierarchical evolution of Computer Vision, structured as a growth trajectory from fundamental image processing to advanced generative models and edge deployment.
+
+![Hierarchy of Computer Vision Roadmap](https://via.placeholder.com/1000x500?text=Computer+Vision+Evolutionary+Tree+Diagram)
+
+---
+
+## 🌳 COMPUTER VISION (Core Root)
+
+### 🌱 1. Image Processing Fundamentals (Roots)
+* **Pixel Manipulation & Color Spaces:** Exploration of fundamental data representations including **RGB**, **HSV**, and **Grayscale** formats.
+* **Filtering & Edge Detection:** Implementation of convolutional kernels for **Blurring**, **Sharpening**, and feature identification via **Canny** and **Sobel** operators.
+* **Geometric Transformations:** Spatial modifications such as **Resizing**, **Rotation**, and affine transformations.
+
+---
+
+### 🪵 2. Traditional Feature Extraction (Trunk)
+* **HOG (Histogram of Oriented Gradients):** Structural feature extraction for object detection.
+* **SIFT/SURF (Keypoint Detection):** Scale-invariant and robust point matching algorithms.
+* **Haar Cascades:** The foundational approach for real-time **Face Detection**.
+
+---
+
+### 🌿 3. The Deep Learning Revolution (Branches)
+* **CNN (Convolutional Neural Networks):** Understanding the **Core Architecture** including convolution layers, pooling, and fully connected layers.
+* **Transfer Learning:** Leveraging pre-trained heavyweights such as **ResNet**, **VGG**, and **Inception** for specialized tasks.
+* **Data Augmentation:** Techniques to artificially expand dataset diversity and prevent overfitting.
+
+---
+
+### 🍎 4. Modern Tasks and SOTA Models (Fruits)
+* **Object Detection:** Real-time identification and localization using **YOLO** (You Only Look Once) and **Faster R-CNN**.
+* **Segmentation:** Pixel-level classification via **Mask R-CNN** and **U-Net** architectures.
+* **Vision Transformers (ViT):** The **State-of-the-Art (SOTA)** technology applying transformer architectures to visual data.
+* **Generative Models:** Creative AI applications including **GANs** (Generative Adversarial Networks) and **Stable Diffusion**.
+
+---
+
+### 🧺 5. Deployment and Optimization (Harvest)
+* **Edge AI:** Implementing models on low-power devices using **TFLite** and **ONNX** runtimes.
+* **Model Quantization:** Optimization and **Acceleration** techniques to reduce model footprint and latency without significant precision loss.
+
+---
+
+### 📝 Summary of Technical Progression
+The roadmap follows a logical progression from **Low-Level Vision** (pixels and edges) to **Mid-Level Vision** (features and shapes) and finally **High-Level Vision** (semantic understanding and generation).
+
+
+
+---
+
+
+
 ---
 
 ## 2. Technical Capabilities & Functional Applications
@@ -211,6 +269,8 @@ Bu doküman, **Master School** müfredatı kapsamında işlenen Bilgisayarlı G�
 
 ---
 
+![alt text](image-1.png)
+
 ## 1. Giriş ve Matematiksel Temeller
 
 Bilgisayarlı Görü, yapılandırılmamış (unstructured) görsel verileri, makinelerin anlamlandırabileceği sayısal tensörlere dönüştürme sanatıdır.
@@ -300,4 +360,148 @@ CNN'lerin yerini almaya başlayan ViT mimarileri, görüntüyü bir dizi (sequen
 Yüz tanıma ve kitlesel izleme sistemlerinde **algoritmik önyargı** (algorithmic bias) ve **GDPR** uyumu en kritik konulardır. Veri setlerinin çeşitliliği, etik bir yapay zeka için zorunluluktur.
 
 ---
-*Bu doküman Master School eğitimi notları ve sektörel iyi uygulama standartları ile oluşturulmuştur.*
+# Deep Learning and Computer Vision: Technical Landscape 2026
+
+This report evaluates the integration of **Deep Learning (DL)** within the **Computer Vision (CV)** domain, contrasting foundational documentation with the high-performance engineering standards of 2026.
+
+---
+
+## 1. The Critical Role of Deep Learning in CV 🧠
+
+While traditional algorithms (like Sobel filters) are effective for basic gradient detection, they fail in **high-entropy environments**. Deep Learning acts as the cognitive engine that decodes three core complexities:
+
+* **High Dimensionality:** A 4K image contains ~8.3 million pixels. With RGB channels, a model must process over **24 million variables** per frame.
+* **Spatial Relationships:** Pixels are context-dependent. A single pixel's value is meaningless unless analyzed alongside its neighbors to form shapes and structures.
+* **Environmental Invariance:** DL models must achieve "Invariance"—recognizing a target regardless of rotation, occlusion, or lighting shifts.
+
+
+
+---
+
+## 2. Anatomy of a Neural Network for Vision 🏗️
+
+Deep Learning utilizes **Artificial Neural Networks (ANNs)**, mathematically structured to simulate biological visual processing through a hierarchy of layers.
+
+### Layer Hierarchy:
+1.  **Input Layer:** Receives raw pixel intensities. For a standard $224 \times 224$ RGB image, this layer manages **150,528 neurons**.
+2.  **Hidden Layers (The "Deep" Layers):**
+    * **Early Layers:** Detect "low-level" features like edges and simple gradients.
+    * **Mid-Layers:** Combine lines into "mid-level" textures or patterns.
+    * **Deep Layers:** Synthesize patterns into abstract concepts (e.g., an eye or a wheel).
+3.  **Output Layer:** The final decision-maker, usually employing a **Softmax** function to provide a probability distribution (e.g., Cat: 98%).
+
+
+
+---
+
+## 3. The "Deep Learning" Revolution 🚀
+
+The shift from "Classical CV" to "Deep CV" introduced four transformative capabilities:
+
+* **Automatic Feature Extraction:** Models now learn features automatically via **Backpropagation**, replacing manually coded descriptors like SIFT.
+* **Generalization Power:** Through **Stochastic Gradient Descent (SGD)**, models minimize error across millions of varied images, enabling recognition in "unseen" conditions.
+* **Scalability:** 2026 hardware (NVIDIA H200/B200 GPUs) allows models to ingest petabytes of data, achieving superhuman accuracy in specialized fields like radiology.
+
+
+
+---
+
+## 4. Framework Analysis: TensorFlow & Keras in 2026 🛠️
+
+In the 2026 ecosystem, **Keras 3** has emerged as a "bridge" framework, allowing developers to write code once and execute it on various backends including JAX, PyTorch, or TensorFlow.
+
+| Feature | TensorFlow / Keras | PyTorch |
+| :--- | :--- | :--- |
+| **Philosophy** | **Production-First:** Structured and scalable. | **Research-First:** Dynamic and flexible. |
+| **Edge Deployment** | **TF Lite:** The gold standard for IoT. | PyTorch Mobile: Rapidly growing. |
+| **Learning Curve** | **Low:** Intuitive "Lego-block" API. | **Medium:** Requires more boilerplate. |
+| **2026 Trend** | Multi-backend support (Keras 3). | Dominates 90%+ of academic research. |
+
+---
+
+## 5. Potential Risks & Gaps in Information ⚠️
+
+### 🛡️ Potential Risks:
+* **The "Black Box" Problem:** It is often difficult to explain *why* a model classified a scan as "cancerous," creating accountability risks in healthcare.
+* **Hardware Bottleneck:** The energy cost of training "Foundational Vision Models" is a significant operational and environmental risk in 2026.
+* **Data Hunger:** Models require thousands of labeled images. Biased datasets lead to failure in diverse real-world conditions (e.g., rain or snow).
+
+### 🔍 Gaps in Information:
+* **Advanced Architectures:** While the text introduces ANNs, it does not yet detail **Convolutional Neural Networks (CNNs)** or **Vision Transformers (ViTs)**—the true engines of 2026 CV.
+
+* **Optimization:** Techniques such as **Transfer Learning** and methods to prevent **Overfitting** (where a model memorizes data rather than learning it) are not addressed.
+* **Self-Supervised Learning:** A major 2026 trend where models learn from raw video without human labels, addressing the "Data Hunger" problem.
+
+---
+
+# Derin Öğrenme ve Bilgisayarlı Görü: 2026 Teknik Manzara 👁️🤖
+
+Bu rapor, **Derin Öğrenme (DL)** mimarilerinin **Bilgisayarlı Görü (CV)** alanındaki entegrasyonunu; temel dokümantasyonlar ve 2026 yılının yüksek performanslı mühendislik standartları ışığında değerlendirmektedir.
+
+---
+
+## 1. Bilgisayarlı Görüde Derin Öğrenmenin Kritik Rolü 🧠
+
+Sobel filtreleri gibi geleneksel algoritmalar temel gradyan tespiti için etkili olsa da, **yüksek entropili ortamlarda** yetersiz kalmaktadır. Derin Öğrenme, üç temel karmaşıklığı çözen bilişsel bir motor görevi görür:
+
+* **Yüksek Boyutluluk:** Bir 4K görüntü yaklaşık 8.3 milyon piksel içerir. RGB kanalları eklendiğinde, bir model kare başına **24 milyondan fazla değişkeni** işlemek zorundadır.
+* **Uzamsal İlişkiler:** Pikseller bağlam bağımlıdır; tek bir pikselin değeri, komşularıyla birlikte analiz edilip şekil ve yapılar oluşturmadığı sürece anlamsızdır.
+* **Çevresel Değişmezlik (Invariance):** DL modelleri; hedefi rotasyon, tıkanma (occlusion) veya ışık değişimlerinden bağımsız olarak tanıma yeteneği olan "Invariance" durumuna ulaşmalıdır.
+
+
+
+---
+
+## 2. Görüntü İşleme İçin Sinir Ağının Anatomisi 🏗️
+
+Derin Öğrenme, biyolojik görsel işlemeyi katmanlı bir hiyerarşi aracılığıyla simüle etmek üzere matematiksel olarak yapılandırılmış **Yapay Sinir Ağlarını (ANN)** kullanır.
+
+### Katman Hiyerarşisi:
+1.  **Giriş Katmanı (Input Layer):** Ham piksel yoğunluklarını alır. Standart bir $224 \times 224$ RGB görüntü için bu katman **150.528 nöronu** yönetir.
+2.  **Gizli Katmanlar (Hidden Layers):**
+    * **Erken Katmanlar:** Kenarlar ve basit gradyanlar gibi "düşük seviyeli" özellikleri tespit eder.
+    * **Orta Katmanlar:** Çizgileri "orta seviyeli" dokulara veya desenlere dönüştürür.
+    * **Derin Katmanlar:** Desenleri soyut kavramlar (örneğin bir göz veya tekerlek) halinde sentezler.
+3.  **Çıkış Katmanı (Output Layer):** Genellikle bir **Softmax** fonksiyonu kullanarak sınıflandırma olasılık dağılımını (örneğin: Kedi %98) sağlayan nihai karar vericidir.
+
+
+
+---
+
+## 3. "Derin Öğrenme" Devrimi 🚀
+
+"Klasik CV"den "Derin CV"ye geçiş, dört dönüştürücü yetenek getirmiştir:
+
+* **Otomatik Özellik Çıkarımı:** Modeller artık SIFT gibi manuel kodlanmış tanımlayıcılar yerine, özellikleri **Geri Yayılım (Backpropagation)** yoluyla otomatik olarak öğrenir.
+* **Genelleme Gücü:** **Stokastik Gradyan İnişi (SGD)** aracılığıyla modeller, milyonlarca farklı görüntü üzerindeki hatayı minimize ederek "hiç görülmemiş" koşullarda tanıma yapabilir.
+* **Ölçeklenebilirlik:** 2026 donanımları (NVIDIA H200/B200 GPU'lar), modellerin petabaytlarca veriyi sindirmesine ve radyoloji gibi uzmanlık alanlarında insan üstü doğruluk oranlarına ulaşmasına olanak tanır.
+
+---
+
+## 4. Çerçeve Analizi: 2026'da TensorFlow ve Keras 🛠️
+
+2026 ekosisteminde **Keras 3**, geliştiricilerin kodu bir kez yazıp JAX, PyTorch veya TensorFlow gibi çeşitli arka uçlarda (backends) çalıştırmasına olanak tanıyan bir "köprü" çerçeve olarak öne çıkmıştır.
+
+| Özellik | TensorFlow / Keras | PyTorch |
+| :--- | :--- | :--- |
+| **Felsefe** | **Önce Üretim:** Yapılandırılmış ve ölçeklenebilir. | **Önce Araştırma:** Dinamik ve esnek. |
+| **Uç Cihaz Dağıtımı** | **TF Lite:** IoT için altın standart. | PyTorch Mobile: Hızla büyüyor. |
+| **Öğrenme Eğrisi** | **Düşük:** Sezgisel "Lego blokları" API yapısı. | **Orta:** Daha fazla temel kod (boilerplate) gerektirir. |
+| **2026 Trendi** | Çoklu arka uç desteği (Keras 3). | Akademik araştırmaların %90+'ını domine eder. |
+
+---
+
+## 5. Potansiyel Riskler ve Bilgi Boşlukları ⚠️
+
+### 🛡️ Potansiyel Riskler:
+* **"Kara Kutu" Problemi:** Bir modelin bir taramayı neden "kanserli" olarak sınıflandırdığını açıklamak genellikle zordur; bu da sağlık hizmetlerinde hesap verebilirlik riskleri yaratır.
+* **Donanım Darboğazı:** "Temel Görüntü Modellerini" (Foundational Vision Models) eğitmenin enerji maliyeti, 2026'da önemli bir operasyonel ve çevresel risktir.
+* **Veri Açlığı:** Modeller binlerce etiketli görüntü gerektirir. Yanlı taraflı veri setleri, gerçek dünya koşullarında (yağmur, kar vb.) başarısızlığa yol açar.
+
+### 🔍 Bilgi Boşlukları:
+* **Gelişmiş Mimariler:** ANN'ler tanıtılmış olsa da, 2026 CV'nin gerçek motorları olan **Evrişimli Sinir Ağları (CNN)** veya **Vision Transformers (ViTs)** detaylandırılmamıştır.
+* **Optimizasyon:** **Transfer Öğrenme (Transfer Learning)** teknikleri ve modelin öğrenmek yerine veriyi ezberlemesi durumu olan **Aşırı Öğrenmeyi (Overfitting)** önleme yöntemleri ele alınmamıştır.
+* **Öz-Denetimli Öğrenme (Self-Supervised Learning):** Modellerin insan etiketleri olmadan ham videodan öğrendiği ve "veri açlığı" sorununu çözen büyük bir 2026 trendidir.
+
+---
+
