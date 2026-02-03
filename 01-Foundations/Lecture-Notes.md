@@ -25,7 +25,6 @@ The distinction between CV and classical ML lies primarily in the nature of the 
 ## 🏗️ Comprehensive Architecture Overview
 This document outlines the hierarchical evolution of Computer Vision, structured as a growth trajectory from fundamental image processing to advanced generative models and edge deployment.
 
-![Hierarchy of Computer Vision Roadmap](https://via.placeholder.com/1000x500?text=Computer+Vision+Evolutionary+Tree+Diagram)
 
 ---
 
