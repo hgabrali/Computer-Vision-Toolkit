@@ -1,5 +1,8 @@
 # 🔬 Technical Deep Dive: U-Net Architecture for Semantic Segmentation
 
+
+<img width="1285" height="688" alt="image" src="https://github.com/user-attachments/assets/87aa1894-cb04-4746-ab91-edfcd474df38" />
+
 ---
 
 ## 🏗️ 1. What is U-Net? Why is it Special?
